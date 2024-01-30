@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Inter", sans-serif !important;
+}
+
+:root {
+  --green: #1b6f58;
+  --wood: #a28d73;
+  --gray: #687693;
+  --bg-body: #f1f0eb;
+  --bg-top: #d9d9d9;
+  --ff-jose: "Josefin Sans", sans-serif;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--gray);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.section-block {
+  padding-block: 80px;
+}
+
+/* #top  */
+/* ======================== */
+.top {
+  background-color: var(--bg-top);
+  line-height: 50px;
+  padding-inline-start: 100px;
+}
+
+.top .social-icons .bx {
+  font-size: 18px;
+  transition: 0.5s ease;
+}
+
+.top .social-icons .bx:is(:hover, :focus-within) {
+  color: var(--green);
+}
+
+.top span :is(.bx, a) {
+  color: var(--gray);
+  transition: 0.5s ease;
+}
+
+.top span a:is(:hover, :focus-within) {
+  color: var(--green);
+}
+
+.top .right {
+  background-color: var(--green);
+  max-width: fit-content;
+  margin-left: auto;
+  color: #fff;
+  transition: 0.5s ease;
+}
+
+.top .right .bx {
+  color: #ccc;
+}
+
+.top .right:is(:hover, :focus-within) {
+  background-color: var(--wood);
+}
